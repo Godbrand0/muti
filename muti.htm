@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="muti.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <ul>
+               <li class="active form_1_progressbar">
+                   <div>
+                      <p>1</p>
+                   </div>
+               </li>
+               <li class="form_2_progressbar">
+                   <div>
+                     <p>2</p>
+                    </div>
+                </li>
+                <li class="form_3_progressbar">
+                   <div>
+                     <p>3</p>
+                    </div>
+                </li>
+           </ul>
+        </div>
+        <div class="form_wrap">
+            <div class="form_1 data_info">
+                <h2>Signup info</h2>
+                <form action="">
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="email_address">Email Address</label>
+                            <input type="text" name="Email Adddress" id="email_address">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="password">Password</label>
+                            <input type="text" name="Password" id="password">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="text" name="Confirm Password" id="confirm_password">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_2 data_info" style="display: none;">
+                <h2>Personal info</h2>
+                <form action="">
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="user_name">User Name</label>
+                            <input type="text" name="User Name" id="user_name">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="First Name" id="first_name">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="Last Name" id="last_name">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_3 data_info" style="display: none;">
+                <h2>Professional info</h2>
+                <form action="">
+                    <div class="form_container">
+                        <div class="input_wrap">
+                            <label for="current_company">Current Company</label>
+                            <input type="text" name="Current Company" id="current_company">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="total_experience">Total Experience</label>
+                            <input type="text" name="Total Experience" id="total_experience">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="designation">Designation</label>
+                            <input type="text" name="Designation" id="designation">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="btns_wrap">
+            <div class="common_btns form_1_btns">
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <ion-icon name="arrow-round-forward"></ion-icon>
+                    </span>
+                </button>
+            </div>
+
+            <div class="common_btns form_2_btns" style="display: none;">
+                <button type="button" class="btn_back">
+                    <span class="icon">
+                        <ion-icon name="arrow-round-back"></ion-icon>
+                    </span>
+                    Back
+                </button>
+                <button type="button" class="btn_next">Next
+                    <span class="icon">
+                        <ion-icon name="arrow-round-forward"></ion-icon>
+                    </span>
+                </button>
+            </div>
+
+            <div class="common_btns form_3_btns" style="display: none;"> 
+               <button type="button" class="btn_back">
+                <span class="icon">
+                    <ion-icon name="arrow-round-back"></ion-icon>
+                </span>
+                Back
+               </button>
+                <button type="button" class="btn_done">Done
+                    <span class="icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_wrapper">
+        <div class="shadow"></div>
+        <div class="success_wrap">
+            <span class="modal_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                </svg>
+                  
+            </span>
+            <p>You have successfully completed the registration.</p>
+        </div>
+    </div>
+    <script src="muti.js"></script>
+</body>
+</html>
